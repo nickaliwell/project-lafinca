@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<!--
+  Compiled from property.json — do not edit content here directly.
+  Content changes: update property.json first, then recompile into this file (see Claude.md).
+-->
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- meta -->
+  <title>La Finca | Countryside Villa Rental</title>
+  <meta name="description" content="Escape to La Finca, a restored countryside villa with a private pool, olive groves, and mountain views. Sleeps 8. Book your stay today.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="La Finca | Countryside Villa Rental">
+  <meta property="og:description" content="Escape to La Finca, a restored countryside villa with a private pool, olive groves, and mountain views. Sleeps 8. Book your stay today.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS (CDN, no build step) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-cream: #faf6ef;
+      --color-sand: #efe6d8;
+      --color-ink: #2b2622;
+      --color-terracotta: #b5562f;
+      --color-terracotta-dark: #8f4223;
+      --color-olive: #5b6b3a;
+      --color-olive-dark: #3f4a27;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+    }
+    dialog::backdrop { background: rgb(43 38 34 / 0.6); }
+  </style>
+</head>
+<body class="bg-cream font-sans text-ink antialiased">
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:shadow">Skip to main content</a>
+
+  <!-- ============ Header / navigation ============ -->
+  <header class="sticky top-0 z-40 border-b border-sand bg-cream/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6" aria-label="Main">
+      <a href="#top" class="font-serif text-2xl font-semibold text-olive-dark">La Finca</a>
+
+      <button type="button" id="nav-toggle" class="rounded p-2 text-olive-dark focus-visible:outline-2 focus-visible:outline-terracotta md:hidden" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <ul id="nav-menu" class="absolute inset-x-0 top-full hidden flex-col gap-1 border-b border-sand bg-cream px-4 pb-4 md:static md:flex md:flex-row md:items-center md:gap-6 md:border-0 md:bg-transparent md:p-0">
+        <li><a href="#overview" class="block py-2 text-sm font-medium hover:text-terracotta">Overview</a></li>
+        <li><a href="#gallery" class="block py-2 text-sm font-medium hover:text-terracotta">Gallery</a></li>
+        <li><a href="#amenities" class="block py-2 text-sm font-medium hover:text-terracotta">Amenities</a></li>
+        <li><a href="#rates" class="block py-2 text-sm font-medium hover:text-terracotta">Rates</a></li>
+        <li><a href="#availability" class="block py-2 text-sm font-medium hover:text-terracotta">Availability</a></li>
+        <li><a href="#location" class="block py-2 text-sm font-medium hover:text-terracotta">Location</a></li>
+        <li><a href="#contact" class="block py-2 text-sm font-medium hover:text-terracotta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ hero ============ -->
+    <section id="top" class="relative isolate flex min-h-[85vh] items-end overflow-hidden bg-olive-dark">
+      <img src="assets/images/hero.jpg" alt="Whitewashed villa with terracotta roof surrounded by olive trees at sunset" class="absolute inset-0 -z-10 h-full w-full object-cover" fetchpriority="high">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent"></div>
+
+      <div class="mx-auto w-full max-w-6xl px-4 pb-16 pt-32 text-white sm:px-6 sm:pb-24">
+        <p class="mb-3 text-sm font-medium uppercase tracking-widest text-sand">Andalusia, Spain</p>
+        <h1 class="max-w-3xl font-serif text-5xl font-semibold leading-tight sm:text-6xl lg:text-7xl">La Finca</h1>
+        <p class="mt-4 max-w-xl text-lg text-white/90 sm:text-xl">A restored countryside villa among the olive groves</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <button type="button" data-action="openBookingModal" class="rounded-full bg-terracotta px-7 py-3 font-medium text-white shadow-lg transition hover:bg-terracotta-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Check Availability</button>
+          <a href="#gallery" class="rounded-full border border-white/70 px-7 py-3 font-medium text-white transition hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ overview ============ -->
+    <section id="overview" class="scroll-mt-20 py-20 sm:py-24">
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-5">
+        <div class="lg:col-span-3">
+          <h2 class="font-serif text-3xl font-semibold text-olive-dark sm:text-4xl">Welcome to La Finca</h2>
+          <div class="mt-6 space-y-4 text-lg leading-relaxed text-ink/80">
+            <p>Set on five acres of olive groves and wild herbs, La Finca is a lovingly restored 19th-century farmhouse that blends rustic character with modern comfort.</p>
+            <p>Spend your days by the private pool, explore nearby white villages, or simply relax on the shaded terrace with a glass of local wine as the sun sets over the mountains.</p>
+          </div>
+        </div>
+
+        <dl class="grid grid-cols-2 gap-4 self-start lg:col-span-2">
+          <div class="rounded-2xl bg-white p-6 shadow-sm">
+            <svg class="h-7 w-7 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16 19v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1M9 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm13 9v-1a4 4 0 0 0-3-3.87M16 4.13a3 3 0 0 1 0 5.74"/></svg>
+            <dt class="mt-3 text-sm text-ink/60">Guests</dt>
+            <dd class="font-serif text-2xl font-semibold">8</dd>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-sm">
+            <svg class="h-7 w-7 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 18v-8m0 4h18m0 4v-6a3 3 0 0 0-3-3h-8v5M7 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg>
+            <dt class="mt-3 text-sm text-ink/60">Bedrooms</dt>
+            <dd class="font-serif text-2xl font-semibold">4</dd>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-sm">
+            <svg class="h-7 w-7 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-2Zm2 0V6a2 2 0 0 1 3.7-1M7 19l-1 2m11-2 1 2"/></svg>
+            <dt class="mt-3 text-sm text-ink/60">Bathrooms</dt>
+            <dd class="font-serif text-2xl font-semibold">3</dd>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-sm">
+            <svg class="h-7 w-7 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 9V4h5M20 9V4h-5M4 15v5h5m11-5v5h-5"/></svg>
+            <dt class="mt-3 text-sm text-ink/60">Living Space</dt>
+            <dd class="font-serif text-2xl font-semibold">280 m²</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ gallery (carousel) ============ -->
+    <section id="gallery" class="scroll-mt-20 bg-sand/60 py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 class="font-serif text-3xl font-semibold text-olive-dark sm:text-4xl">Gallery</h2>
+
+        <div class="relative mt-10" data-carousel role="region" aria-roledescription="carousel" aria-label="Gallery" tabindex="0">
+          <div class="overflow-hidden rounded-2xl bg-sand shadow-md">
+            <ul class="flex transition-transform duration-500 ease-out" data-carousel-track>
+              <li class="w-full shrink-0" role="group" aria-roledescription="slide" aria-label="1 / 6">
+                <figure>
+                  <img src="assets/images/gallery-01.jpg" alt="Private pool with sun loungers overlooking the olive grove" class="aspect-[16/9] w-full object-cover" loading="lazy">
+                  <figcaption class="bg-white px-5 py-3 text-sm text-ink/70">Private pool</figcaption>
+                </figure>
+              </li>
+              <li class="w-full shrink-0" role="group" aria-roledescription="slide" aria-label="2 / 6">
+                <figure>
+                  <img src="assets/images/gallery-02.jpg" alt="Open-plan living room with exposed beams and fireplace" class="aspect-[16/9] w-full object-cover" loading="lazy">
+                  <figcaption class="bg-white px-5 py-3 text-sm text-ink/70">Living room</figcaption>
+                </figure>
+              </li>
+              <li class="w-full shrink-0" role="group" aria-roledescription="slide" aria-label="3 / 6">
+                <figure>
+                  <img src="assets/images/gallery-03.jpg" alt="Rustic kitchen with farmhouse table and modern appliances" class="aspect-[16/9] w-full object-cover" loading="lazy">
+                  <figcaption class="bg-white px-5 py-3 text-sm text-ink/70">Kitchen</figcaption>
+                </figure>
+              </li>
+              <li class="w-full shrink-0" role="group" aria-roledescription="slide" aria-label="4 / 6">
+                <figure>
+                  <img src="assets/images/gallery-04.jpg" alt="Master bedroom with king bed and shuttered windows" class="aspect-[16/9] w-full object-cover" loading="lazy">
+                  <figcaption class="bg-white px-5 py-3 text-sm text-ink/70">Master bedroom</figcaption>
+                </figure>
+              </li>
+              <li class="w-full shrink-0" role="group" aria-roledescription="slide" aria-label="5 / 6">
+                <figure>
+                  <img src="assets/images/gallery-05.jpg" alt="Shaded terrace with dining table set for eight" class="aspect-[16/9] w-full object-cover" loading="lazy">
+                  <figcaption class="bg-white px-5 py-3 text-sm text-ink/70">Terrace</figcaption>
+                </figure>
+              </li>
+              <li class="w-full shrink-0" role="group" aria-roledescription="slide" aria-label="6 / 6">
+                <figure>
+                  <img src="assets/images/gallery-06.jpg" alt="Mountain view at sunset from the garden" class="aspect-[16/9] w-full object-cover" loading="lazy">
+                  <figcaption class="bg-white px-5 py-3 text-sm text-ink/70">Sunset views</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+
+          <button type="button" data-carousel-prev aria-label="Previous image" class="absolute left-3 top-[calc(50%-1.5rem)] -translate-y-1/2 rounded-full bg-white/90 p-3 text-olive-dark shadow transition hover:bg-white focus-visible:outline-2 focus-visible:outline-terracotta">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button type="button" data-carousel-next aria-label="Next image" class="absolute right-3 top-[calc(50%-1.5rem)] -translate-y-1/2 rounded-full bg-white/90 p-3 text-olive-dark shadow transition hover:bg-white focus-visible:outline-2 focus-visible:outline-terracotta">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6"/></svg>
+          </button>
+
+          <div class="mt-5 flex justify-center gap-2" data-carousel-dots>
+            <button type="button" aria-label="Go to image 1" class="h-2.5 w-2.5 rounded-full bg-olive/30 transition aria-[current=true]:w-6 aria-[current=true]:bg-terracotta"></button>
+            <button type="button" aria-label="Go to image 2" class="h-2.5 w-2.5 rounded-full bg-olive/30 transition aria-[current=true]:w-6 aria-[current=true]:bg-terracotta"></button>
+            <button type="button" aria-label="Go to image 3" class="h-2.5 w-2.5 rounded-full bg-olive/30 transition aria-[current=true]:w-6 aria-[current=true]:bg-terracotta"></button>
+            <button type="button" aria-label="Go to image 4" class="h-2.5 w-2.5 rounded-full bg-olive/30 transition aria-[current=true]:w-6 aria-[current=true]:bg-terracotta"></button>
+            <button type="button" aria-label="Go to image 5" class="h-2.5 w-2.5 rounded-full bg-olive/30 transition aria-[current=true]:w-6 aria-[current=true]:bg-terracotta"></button>
+            <button type="button" aria-label="Go to image 6" class="h-2.5 w-2.5 rounded-full bg-olive/30 transition aria-[current=true]:w-6 aria-[current=true]:bg-terracotta"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ amenities ============ -->
+    <section id="amenities" class="scroll-mt-20 py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 class="font-serif text-3xl font-semibold text-olive-dark sm:text-4xl">Amenities</h2>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 class="font-serif text-xl font-semibold text-terracotta">Outdoor</h3>
+            <ul class="mt-4 space-y-2 text-ink/80">
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>Private heated pool</li>
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>Shaded terrace with dining area</li>
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>BBQ grill</li>
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>Olive grove and gardens</li>
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>Sun loungers</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 class="font-serif text-xl font-semibold text-terracotta">Indoor</h3>
+            <ul class="mt-4 space-y-2 text-ink/80">
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>Fully equipped kitchen</li>
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>Wood-burning fireplace</li>
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>Air conditioning</li>
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>Smart TV</li>
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>Washer and dryer</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 class="font-serif text-xl font-semibold text-terracotta">Connectivity</h3>
+            <ul class="mt-4 space-y-2 text-ink/80">
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>High-speed Wi-Fi</li>
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>Dedicated workspace</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 class="font-serif text-xl font-semibold text-terracotta">Family &amp; Practical</h3>
+            <ul class="mt-4 space-y-2 text-ink/80">
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>Free private parking</li>
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>Travel cot and high chair</li>
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>Pool fence</li>
+              <li class="flex gap-2"><span class="text-olive" aria-hidden="true">✓</span>First aid kit</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ rooms ============ -->
+    <section id="rooms" class="scroll-mt-20 bg-sand/60 py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 class="font-serif text-3xl font-semibold text-olive-dark sm:text-4xl">Sleeping Arrangements</h2>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 class="font-serif text-xl font-semibold">Master Suite</h3>
+            <p class="mt-1 font-medium text-terracotta">1 King bed</p>
+            <ul class="mt-4 space-y-1 text-sm text-ink/70">
+              <li>En-suite bathroom</li>
+              <li>Garden views</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 class="font-serif text-xl font-semibold">Olive Room</h3>
+            <p class="mt-1 font-medium text-terracotta">1 Queen bed</p>
+            <ul class="mt-4 space-y-1 text-sm text-ink/70">
+              <li>En-suite bathroom</li>
+              <li>Private balcony</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 class="font-serif text-xl font-semibold">Garden Room</h3>
+            <p class="mt-1 font-medium text-terracotta">2 Single beds</p>
+            <ul class="mt-4 space-y-1 text-sm text-ink/70">
+              <li>Shared bathroom</li>
+              <li>Garden access</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 class="font-serif text-xl font-semibold">Loft Room</h3>
+            <p class="mt-1 font-medium text-terracotta">2 Single beds</p>
+            <ul class="mt-4 space-y-1 text-sm text-ink/70">
+              <li>Shared bathroom</li>
+              <li>Mountain views</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ pricing ============ -->
+    <section id="rates" class="scroll-mt-20 py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <h2 class="font-serif text-3xl font-semibold text-olive-dark sm:text-4xl">Rates</h2>
+          <p class="text-ink/70">From <span class="font-serif text-3xl font-semibold text-terracotta">€250</span> per night <span class="mx-2 text-ink/30" aria-hidden="true">|</span> Minimum stay 3 nights</p>
+        </div>
+
+        <div class="mt-10 overflow-x-auto rounded-2xl bg-white shadow-sm">
+          <table class="w-full min-w-[32rem] text-left">
+            <thead class="border-b border-sand bg-sand/40 text-sm uppercase tracking-wide text-ink/60">
+              <tr>
+                <th scope="col" class="px-6 py-4 font-medium">Season</th>
+                <th scope="col" class="px-6 py-4 font-medium">Dates</th>
+                <th scope="col" class="px-6 py-4 font-medium">Nightly Rate</th>
+                <th scope="col" class="px-6 py-4 font-medium">Min. Stay</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-sand">
+              <tr>
+                <th scope="row" class="px-6 py-4 font-semibold">Low Season</th>
+                <td class="px-6 py-4 text-ink/80">Nov – Mar</td>
+                <td class="px-6 py-4 font-semibold text-terracotta">€250</td>
+                <td class="px-6 py-4 text-ink/80">3 nights</td>
+              </tr>
+              <tr>
+                <th scope="row" class="px-6 py-4 font-semibold">Mid Season</th>
+                <td class="px-6 py-4 text-ink/80">Apr – May, Oct</td>
+                <td class="px-6 py-4 font-semibold text-terracotta">€320</td>
+                <td class="px-6 py-4 text-ink/80">5 nights</td>
+              </tr>
+              <tr>
+                <th scope="row" class="px-6 py-4 font-semibold">High Season</th>
+                <td class="px-6 py-4 text-ink/80">Jun – Sep</td>
+                <td class="px-6 py-4 font-semibold text-terracotta">€420</td>
+                <td class="px-6 py-4 text-ink/80">7 nights</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <div class="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 class="font-serif text-xl font-semibold">Additional Fees</h3>
+            <dl class="mt-4 divide-y divide-sand">
+              <div class="flex justify-between gap-4 py-2">
+                <dt class="text-ink/80">Cleaning Fee</dt>
+                <dd class="font-medium">€120 <span class="text-sm font-normal text-ink/60">per stay</span></dd>
+              </div>
+              <div class="flex justify-between gap-4 py-2">
+                <dt class="text-ink/80">Refundable Security Deposit</dt>
+                <dd class="font-medium">€500 <span class="text-sm font-normal text-ink/60">per stay</span></dd>
+              </div>
+            </dl>
+          </div>
+          <ul class="space-y-3 self-center text-ink/70">
+            <li class="flex gap-2"><span class="text-olive" aria-hidden="true">•</span>All rates include utilities, Wi-Fi, linens, and towels.</li>
+            <li class="flex gap-2"><span class="text-olive" aria-hidden="true">•</span>Local tourist tax is payable on arrival.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ availability ============ -->
+    <section id="availability" class="scroll-mt-20 bg-sand/60 py-20 sm:py-24" data-availability data-booked-label="Booked" data-available-label="Available" data-months-ahead="12" data-week-starts-on="1">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <h2 class="font-serif text-3xl font-semibold text-olive-dark sm:text-4xl">Availability</h2>
+            <p class="mt-4 max-w-2xl text-lg text-ink/70">Booked nights are marked below. Pick any open dates and send us an inquiry.</p>
+          </div>
+          <ul class="flex gap-5 text-sm">
+            <li class="flex items-center gap-2"><span class="h-4 w-4 rounded border border-olive/40 bg-white" aria-hidden="true"></span>Available</li>
+            <li class="flex items-center gap-2"><span class="h-4 w-4 rounded bg-terracotta" aria-hidden="true"></span>Booked</li>
+          </ul>
+        </div>
+
+        <div class="mt-10 rounded-2xl bg-white p-4 shadow-sm sm:p-6">
+          <div class="flex items-center justify-between">
+            <button type="button" data-cal-prev aria-label="Previous month" class="rounded-full p-2 text-olive-dark hover:bg-sand focus-visible:outline-2 focus-visible:outline-terracotta disabled:cursor-not-allowed disabled:opacity-30">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6"/></svg>
+            </button>
+            <button type="button" data-cal-next aria-label="Next month" class="rounded-full p-2 text-olive-dark hover:bg-sand focus-visible:outline-2 focus-visible:outline-terracotta disabled:cursor-not-allowed disabled:opacity-30">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+          <div data-cal-months class="mt-2 grid gap-8 md:grid-cols-2" aria-live="polite"></div>
+        </div>
+      </div>
+      <!-- Compiled from property.json → availability.dates ("YYYY-MM-DD": true = booked). When served over HTTP, property.json is also fetched live so edits show without recompiling. -->
+      <script type="application/json" id="availability-data">{"2026-12-22":true,"2026-12-23":true,"2026-12-24":true,"2026-12-25":true,"2026-12-26":true,"2026-12-27":true,"2026-12-28":true,"2027-01-02":false}</script>
+    </section>
+
+    <!-- ============ location ============ -->
+    <section id="location" class="scroll-mt-20 bg-olive-dark py-20 text-cream sm:py-24">
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2">
+        <div>
+          <h2 class="font-serif text-3xl font-semibold sm:text-4xl">Location</h2>
+          <p class="mt-6 text-lg leading-relaxed text-cream/85">La Finca sits in peaceful countryside just 10 minutes from a traditional white village, with shops, restaurants, and a weekly market.</p>
+          <address class="mt-6 not-italic text-sand">Camino de los Olivos, s/n, Andalusia, Spain</address>
+          <!-- location.mapEmbedUrl is empty: map iframe omitted. Add the URL in property.json to enable it. -->
+        </div>
+        <div>
+          <h3 class="font-serif text-xl font-semibold">Getting Around</h3>
+          <dl class="mt-4 divide-y divide-cream/15">
+            <div class="flex justify-between gap-4 py-3">
+              <dt>Village centre</dt>
+              <dd class="text-sand">10 min drive</dd>
+            </div>
+            <div class="flex justify-between gap-4 py-3">
+              <dt>Nearest beach</dt>
+              <dd class="text-sand">45 min drive</dd>
+            </div>
+            <div class="flex justify-between gap-4 py-3">
+              <dt>Málaga Airport</dt>
+              <dd class="text-sand">1 hr drive</dd>
+            </div>
+            <div class="flex justify-between gap-4 py-3">
+              <dt>Granada</dt>
+              <dd class="text-sand">1 hr 30 min drive</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ rules ============ -->
+    <section id="rules" class="scroll-mt-20 py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 class="font-serif text-3xl font-semibold text-olive-dark sm:text-4xl">House Rules</h2>
+        <div class="mt-10 grid gap-6 lg:grid-cols-3">
+          <dl class="grid grid-cols-2 gap-4 self-start">
+            <div class="rounded-2xl bg-white p-6 shadow-sm">
+              <dt class="text-sm text-ink/60">Check-in</dt>
+              <dd class="mt-1 font-serif text-xl font-semibold">From 16:00</dd>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow-sm">
+              <dt class="text-sm text-ink/60">Check-out</dt>
+              <dd class="mt-1 font-serif text-xl font-semibold">By 10:00</dd>
+            </div>
+          </dl>
+          <ul class="space-y-3 rounded-2xl bg-white p-6 text-ink/80 shadow-sm">
+            <li class="flex gap-2"><span class="text-terracotta" aria-hidden="true">•</span>No smoking indoors</li>
+            <li class="flex gap-2"><span class="text-terracotta" aria-hidden="true">•</span>No parties or events</li>
+            <li class="flex gap-2"><span class="text-terracotta" aria-hidden="true">•</span>Pets considered on request</li>
+            <li class="flex gap-2"><span class="text-terracotta" aria-hidden="true">•</span>Quiet hours from 23:00 to 08:00</li>
+          </ul>
+          <div class="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 class="font-serif text-xl font-semibold">Cancellation Policy</h3>
+            <p class="mt-3 text-ink/80">Full refund for cancellations made at least 30 days before arrival. 50% refund for cancellations made 14–30 days before arrival.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ testimonials ============ -->
+    <section id="reviews" class="scroll-mt-20 bg-sand/60 py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 class="font-serif text-3xl font-semibold text-olive-dark sm:text-4xl">Guest Reviews</h2>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <figure class="flex flex-col rounded-2xl bg-white p-6 shadow-sm">
+            <p class="text-terracotta" aria-hidden="true">★★★★★</p>
+            <p class="sr-only">5 out of 5 stars</p>
+            <blockquote class="mt-3 flex-1 font-serif text-lg leading-relaxed">“The most peaceful week we've ever had. The pool and the views are unbeatable.”</blockquote>
+            <figcaption class="mt-4 text-sm"><span class="font-semibold">Sarah &amp; Tom</span> <span class="text-ink/60">· United Kingdom</span></figcaption>
+          </figure>
+          <figure class="flex flex-col rounded-2xl bg-white p-6 shadow-sm">
+            <p class="text-terracotta" aria-hidden="true">★★★★★</p>
+            <p class="sr-only">5 out of 5 stars</p>
+            <blockquote class="mt-3 flex-1 font-serif text-lg leading-relaxed">“Beautifully restored and spotlessly clean. The hosts thought of everything.”</blockquote>
+            <figcaption class="mt-4 text-sm"><span class="font-semibold">Lukas</span> <span class="text-ink/60">· Germany</span></figcaption>
+          </figure>
+          <figure class="flex flex-col rounded-2xl bg-white p-6 shadow-sm">
+            <p class="text-terracotta" aria-hidden="true">★★★★★</p>
+            <p class="sr-only">5 out of 5 stars</p>
+            <blockquote class="mt-3 flex-1 font-serif text-lg leading-relaxed">“Perfect base for exploring Andalusia with the whole family.”</blockquote>
+            <figcaption class="mt-4 text-sm"><span class="font-semibold">The Martins</span> <span class="text-ink/60">· France</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ contact ============ -->
+    <section id="contact" class="scroll-mt-20 py-20 sm:py-24">
+      <div class="mx-auto max-w-3xl px-4 text-center sm:px-6">
+        <h2 class="font-serif text-3xl font-semibold text-olive-dark sm:text-4xl">Book Your Stay</h2>
+        <p class="mt-4 text-lg text-ink/70">Send us your dates and we'll get back to you within 24 hours.</p>
+        <button type="button" data-action="openBookingModal" class="mt-8 rounded-full bg-terracotta px-8 py-3 font-medium text-white shadow transition hover:bg-terracotta-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-terracotta">Check Availability</button>
+        <dl class="mt-12 grid gap-6 text-left sm:grid-cols-3">
+          <div class="rounded-2xl bg-white p-6 shadow-sm">
+            <dt class="text-sm text-ink/60">Your host</dt>
+            <dd class="mt-1 font-medium">Your Host Name</dd>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-sm">
+            <dt class="text-sm text-ink/60">Email</dt>
+            <dd class="mt-1 font-medium"><a href="mailto:hello@example.com" class="break-all hover:text-terracotta">hello@example.com</a></dd>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-sm">
+            <dt class="text-sm text-ink/60">Phone</dt>
+            <dd class="mt-1 font-medium"><a href="tel:+34600000000" class="hover:text-terracotta">+34 600 000 000</a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ footer ============ -->
+  <footer class="border-t border-sand py-8">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 text-sm text-ink/60 sm:flex-row sm:px-6">
+      <p>© 2026 La Finca. All rights reserved.</p>
+      <!-- footer.social URLs are empty: social links omitted. Add URLs in property.json to enable them. -->
+    </div>
+  </footer>
+
+  <!-- ============ Booking modal ============ -->
+  <dialog id="booking-modal" aria-labelledby="booking-title" class="m-auto w-[calc(100%-2rem)] max-w-xl rounded-2xl bg-cream p-0 text-ink shadow-2xl">
+    <div class="p-6 sm:p-8">
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <h2 id="booking-title" class="font-serif text-2xl font-semibold text-olive-dark">Book Your Stay</h2>
+          <p class="mt-1 text-ink/70">Send us your dates and we'll get back to you within 24 hours.</p>
+        </div>
+        <button type="button" data-close-modal aria-label="Close" class="rounded-full p-2 text-ink/60 hover:bg-sand hover:text-ink focus-visible:outline-2 focus-visible:outline-terracotta">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+
+      <form id="booking-form" action="" method="post" class="mt-6 grid gap-4 sm:grid-cols-2">
+        <div class="sm:col-span-2">
+          <label for="f-name" class="mb-1 block text-sm font-medium">Full Name</label>
+          <input id="f-name" name="name" type="text" required autocomplete="name" class="w-full rounded-lg border border-sand bg-white px-3 py-2 focus:border-terracotta focus:outline-none focus:ring-2 focus:ring-terracotta/30">
+        </div>
+        <div class="sm:col-span-2">
+          <label for="f-email" class="mb-1 block text-sm font-medium">Email Address</label>
+          <input id="f-email" name="email" type="email" required autocomplete="email" class="w-full rounded-lg border border-sand bg-white px-3 py-2 focus:border-terracotta focus:outline-none focus:ring-2 focus:ring-terracotta/30">
+        </div>
+        <div>
+          <label for="f-checkin" class="mb-1 block text-sm font-medium">Check-in Date</label>
+          <input id="f-checkin" name="checkIn" type="date" required class="w-full rounded-lg border border-sand bg-white px-3 py-2 focus:border-terracotta focus:outline-none focus:ring-2 focus:ring-terracotta/30">
+        </div>
+        <div>
+          <label for="f-checkout" class="mb-1 block text-sm font-medium">Check-out Date</label>
+          <input id="f-checkout" name="checkOut" type="date" required class="w-full rounded-lg border border-sand bg-white px-3 py-2 focus:border-terracotta focus:outline-none focus:ring-2 focus:ring-terracotta/30">
+        </div>
+        <div class="sm:col-span-2">
+          <label for="f-guests" class="mb-1 block text-sm font-medium">Number of Guests</label>
+          <input id="f-guests" name="guests" type="number" min="1" max="8" required class="w-full rounded-lg border border-sand bg-white px-3 py-2 focus:border-terracotta focus:outline-none focus:ring-2 focus:ring-terracotta/30">
+        </div>
+        <div class="sm:col-span-2">
+          <label for="f-message" class="mb-1 block text-sm font-medium">Message</label>
+          <textarea id="f-message" name="message" rows="4" class="w-full rounded-lg border border-sand bg-white px-3 py-2 focus:border-terracotta focus:outline-none focus:ring-2 focus:ring-terracotta/30"></textarea>
+        </div>
+        <div class="sm:col-span-2">
+          <button type="submit" class="w-full rounded-full bg-terracotta px-6 py-3 font-medium text-white transition hover:bg-terracotta-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-terracotta">Send Inquiry</button>
+        </div>
+      </form>
+
+      <p id="booking-success" class="mt-6 hidden rounded-lg bg-olive/10 p-4 text-olive-dark" role="status">Thank you! Your inquiry has been received. We'll be in touch within 24 hours.</p>
+    </div>
+  </dialog>
+
+  <!-- ============ Interaction (vanilla JS) ============ -->
+  <script>
+    (function () {
+      // Missing images: hide the broken icon so the section's background shows through.
+      document.querySelectorAll('img').forEach(function (img) {
+        function hide() { img.style.visibility = 'hidden'; }
+        if (img.complete && img.naturalWidth === 0) hide();
+        else img.addEventListener('error', hide);
+      });
+
+      // Mobile navigation
+      var navToggle = document.getElementById('nav-toggle');
+      var navMenu = document.getElementById('nav-menu');
+      function setNav(open) {
+        navToggle.setAttribute('aria-expanded', String(open));
+        navMenu.classList.toggle('hidden', !open);
+        navMenu.classList.toggle('flex', open);
+      }
+      navToggle.addEventListener('click', function () {
+        setNav(navToggle.getAttribute('aria-expanded') !== 'true');
+      });
+      navMenu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () { setNav(false); });
+      });
+
+      // Gallery carousel
+      var carousel = document.querySelector('[data-carousel]');
+      var track = carousel.querySelector('[data-carousel-track]');
+      var slides = track.children;
+      var dots = carousel.querySelectorAll('[data-carousel-dots] button');
+      var index = 0;
+      function goTo(i) {
+        index = (i + slides.length) % slides.length;
+        track.style.transform = 'translateX(-' + index * 100 + '%)';
+        Array.prototype.forEach.call(slides, function (slide, n) {
+          slide.setAttribute('aria-hidden', String(n !== index));
+        });
+        dots.forEach(function (dot, n) { dot.setAttribute('aria-current', String(n === index)); });
+      }
+      carousel.querySelector('[data-carousel-prev]').addEventListener('click', function () { goTo(index - 1); });
+      carousel.querySelector('[data-carousel-next]').addEventListener('click', function () { goTo(index + 1); });
+      dots.forEach(function (dot, n) { dot.addEventListener('click', function () { goTo(n); }); });
+      carousel.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') goTo(index - 1);
+        if (e.key === 'ArrowRight') goTo(index + 1);
+      });
+      var touchX = null;
+      track.addEventListener('touchstart', function (e) { touchX = e.touches[0].clientX; }, { passive: true });
+      track.addEventListener('touchend', function (e) {
+        if (touchX === null) return;
+        var dx = e.changedTouches[0].clientX - touchX;
+        if (Math.abs(dx) > 40) goTo(index + (dx < 0 ? 1 : -1));
+        touchX = null;
+      });
+      goTo(0);
+
+      // Availability calendar
+      var avail = document.querySelector('[data-availability]');
+      if (avail) {
+        var booked = JSON.parse(document.getElementById('availability-data').textContent);
+        var lang = document.documentElement.lang || undefined;
+        var monthsEl = avail.querySelector('[data-cal-months]');
+        var calPrev = avail.querySelector('[data-cal-prev]');
+        var calNext = avail.querySelector('[data-cal-next]');
+        var monthsAhead = parseInt(avail.dataset.monthsAhead, 10) || 12;
+        var weekStart = parseInt(avail.dataset.weekStartsOn, 10) || 0;
+        var shown = 2;
+        var today = new Date(); today.setHours(0, 0, 0, 0);
+        var offset = 0;
+        var maxOffset = Math.max(0, monthsAhead - shown);
+        var monthFmt = new Intl.DateTimeFormat(lang, { month: 'long', year: 'numeric' });
+        var dayFmt = new Intl.DateTimeFormat(lang, { weekday: 'short' });
+        var dayLongFmt = new Intl.DateTimeFormat(lang, { weekday: 'long' });
+        function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+        function renderMonth(year, month) {
+          var table = document.createElement('table');
+          table.className = 'w-full table-fixed text-center text-sm';
+          var caption = document.createElement('caption');
+          caption.className = 'mb-3 font-serif text-lg font-semibold text-olive-dark';
+          caption.textContent = monthFmt.format(new Date(year, month, 1));
+          table.appendChild(caption);
+
+          var headRow = table.createTHead().insertRow();
+          for (var w = 0; w < 7; w++) {
+            var ref = new Date(2024, 0, 7 + ((weekStart + w) % 7)); // 7 Jan 2024 is a Sunday
+            var th = document.createElement('th');
+            th.scope = 'col';
+            th.className = 'pb-2 text-xs font-medium uppercase text-ink/60';
+            th.innerHTML = '<abbr title="' + dayLongFmt.format(ref) + '" class="no-underline">' + dayFmt.format(ref) + '</abbr>';
+            headRow.appendChild(th);
+          }
+
+          var body = table.createTBody();
+          var lead = (new Date(year, month, 1).getDay() - weekStart + 7) % 7;
+          var days = new Date(year, month + 1, 0).getDate();
+          var row = body.insertRow();
+          for (var i = 0; i < lead; i++) row.insertCell();
+          for (var d = 1; d <= days; d++) {
+            if (row.cells.length === 7) row = body.insertRow();
+            var iso = year + '-' + pad(month + 1) + '-' + pad(d);
+            var isBooked = booked[iso] === true;
+            var isPast = new Date(year, month, d) < today;
+            var cell = row.insertCell();
+            cell.className = 'p-0.5';
+            var span = document.createElement('span');
+            span.className = 'flex aspect-square items-center justify-center rounded-lg ' + (
+              isPast ? 'text-ink/30' :
+              isBooked ? 'bg-terracotta font-medium text-white line-through' :
+              'border border-olive/30 bg-white font-medium text-olive-dark'
+            );
+            span.innerHTML = '<time datetime="' + iso + '">' + d + '</time>' +
+              (isPast ? '' : '<span class="sr-only">, ' + (isBooked ? avail.dataset.bookedLabel : avail.dataset.availableLabel) + '</span>');
+            cell.appendChild(span);
+          }
+          while (row.cells.length < 7) row.insertCell();
+          return table;
+        }
+
+        function renderCalendar() {
+          monthsEl.innerHTML = '';
+          for (var m = 0; m < shown; m++) {
+            var first = new Date(today.getFullYear(), today.getMonth() + offset + m, 1);
+            monthsEl.appendChild(renderMonth(first.getFullYear(), first.getMonth()));
+          }
+          calPrev.disabled = offset <= 0;
+          calNext.disabled = offset >= maxOffset;
+        }
+        calPrev.addEventListener('click', function () { if (offset > 0) { offset--; renderCalendar(); } });
+        calNext.addEventListener('click', function () { if (offset < maxOffset) { offset++; renderCalendar(); } });
+        renderCalendar();
+
+        // When served over HTTP, read booked dates straight from property.json so updates appear without recompiling.
+        if (location.protocol !== 'file:' && window.fetch) {
+          fetch('property.json', { cache: 'no-cache' })
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (data) {
+              if (data && data.availability && data.availability.dates) {
+                booked = data.availability.dates;
+                renderCalendar();
+              }
+            })
+            .catch(function () { /* keep compiled data */ });
+        }
+      }
+
+      // Booking modal
+      var modal = document.getElementById('booking-modal');
+      var form = document.getElementById('booking-form');
+      var success = document.getElementById('booking-success');
+      document.querySelectorAll('[data-action="openBookingModal"]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          form.classList.remove('hidden');
+          success.classList.add('hidden');
+          modal.showModal();
+        });
+      });
+      modal.querySelector('[data-close-modal]').addEventListener('click', function () { modal.close(); });
+      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+
+      // Date constraints: no past dates, check-out after check-in
+      var checkIn = document.getElementById('f-checkin');
+      var checkOut = document.getElementById('f-checkout');
+      function isoDate(d) { return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10); }
+      checkIn.min = isoDate(new Date());
+      checkIn.addEventListener('change', function () {
+        if (!checkIn.value) return;
+        var next = new Date(checkIn.value + 'T00:00:00');
+        next.setDate(next.getDate() + 1);
+        checkOut.min = isoDate(next);
+        if (checkOut.value && checkOut.value < checkOut.min) checkOut.value = '';
+      });
+
+      // With no contact.formAction set, show the confirmation without sending anywhere.
+      form.addEventListener('submit', function (e) {
+        if (form.getAttribute('action')) return;
+        e.preventDefault();
+        form.reset();
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
+      });
+    })();
+  </script>
+</body>
+</html>

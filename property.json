@@ -1,0 +1,405 @@
+{
+  "meta": {
+    "siteTitle": "La Finca | Countryside Villa Rental",
+    "metaDescription": "Escape to La Finca, a restored countryside villa with a private pool, olive groves, and mountain views. Sleeps 8. Book your stay today.",
+    "ogImage": "assets/images/hero.jpg",
+    "language": "en",
+    "currency": "EUR",
+    "currencySymbol": "€"
+  },
+  "ui": {
+    "skipLinkLabel": "Skip to main content",
+    "menuLabel": "Open menu",
+    "closeLabel": "Close",
+    "previousLabel": "Previous image",
+    "nextLabel": "Next image",
+    "goToSlideLabel": "Go to image",
+    "fromLabel": "From",
+    "perNightLabel": "per night",
+    "minimumStayLabel": "Minimum stay",
+    "nightsLabel": "nights",
+    "seasonColumnLabel": "Season",
+    "datesColumnLabel": "Dates",
+    "rateColumnLabel": "Nightly Rate",
+    "minStayColumnLabel": "Min. Stay",
+    "feesHeading": "Additional Fees",
+    "checkInLabel": "Check-in",
+    "checkOutLabel": "Check-out",
+    "cancellationHeading": "Cancellation Policy",
+    "nearbyHeading": "Getting Around",
+    "hostLabel": "Your host",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "ratingSuffix": "out of 5 stars",
+    "previousMonthLabel": "Previous month",
+    "nextMonthLabel": "Next month"
+  },
+  "hero": {
+    "propertyName": "La Finca",
+    "tagline": "A restored countryside villa among the olive groves",
+    "location": "North Costa Blanca, Spain",
+    "backgroundImage": {
+      "src": "assets/images/hero.jpg",
+      "alt": "Whitewashed villa with terracotta roof surrounded by olive trees at sunset"
+    },
+    "ctaPrimary": {
+      "label": "Check Availability",
+      "action": "openBookingModal"
+    },
+    "ctaSecondary": {
+      "label": "View Gallery",
+      "href": "#gallery"
+    }
+  },
+  "overview": {
+    "heading": "Welcome to La Finca",
+    "paragraphs": [
+      "Set on five acres of olive groves and wild herbs, La Finca is a lovingly restored 19th-century farmhouse that blends rustic character with modern comfort.",
+      "Spend your days by the private pool, explore nearby white villages, or simply relax on the shaded terrace with a glass of local wine as the sun sets over the mountains."
+    ],
+    "highlights": [
+      {
+        "icon": "users",
+        "label": "Guests",
+        "value": "8"
+      },
+      {
+        "icon": "bed",
+        "label": "Bedrooms",
+        "value": "4"
+      },
+      {
+        "icon": "bath",
+        "label": "Bathrooms",
+        "value": "3"
+      },
+      {
+        "icon": "area",
+        "label": "Living Space",
+        "value": "280 m²"
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Rates",
+    "nightlyFrom": 250,
+    "minimumStayNights": 3,
+    "seasons": [
+      {
+        "name": "Low Season",
+        "dates": "Nov – Mar",
+        "nightlyRate": 250,
+        "minimumStayNights": 3
+      },
+      {
+        "name": "Mid Season",
+        "dates": "Apr – May, Oct",
+        "nightlyRate": 320,
+        "minimumStayNights": 5
+      },
+      {
+        "name": "High Season",
+        "dates": "Jun – Sep",
+        "nightlyRate": 420,
+        "minimumStayNights": 7
+      }
+    ],
+    "fees": [
+      {
+        "name": "Cleaning Fee",
+        "amount": 120,
+        "basis": "per stay"
+      },
+      {
+        "name": "Refundable Security Deposit",
+        "amount": 500,
+        "basis": "per stay"
+      }
+    ],
+    "notes": [
+      "All rates include utilities, Wi-Fi, linens, and towels.",
+      "Local tourist tax is payable on arrival."
+    ]
+  },
+  "availability": {
+    "heading": "Availability",
+    "intro": "Booked nights are marked below. Pick any open dates and send us an inquiry.",
+    "bookedLabel": "Booked",
+    "availableLabel": "Available",
+    "monthsAhead": 12,
+    "weekStartsOn": 1,
+    "dates": {
+      "2026-12-29": true,
+      "2026-12-30": true,
+      "2026-12-31": true,
+      "2027-01-01": true,
+      "2027-01-02": true,
+      "2027-01-03": true,
+      "2027-01-04": true,
+      "2027-01-05": false
+    }
+  },
+  "amenities": {
+    "heading": "Amenities",
+    "categories": [
+      {
+        "name": "Outdoor",
+        "items": [
+          "Private heated pool",
+          "Shaded terrace with dining area",
+          "BBQ grill",
+          "Olive grove and gardens",
+          "Sun loungers"
+        ]
+      },
+      {
+        "name": "Indoor",
+        "items": [
+          "Fully equipped kitchen",
+          "Wood-burning fireplace",
+          "Air conditioning",
+          "Smart TV",
+          "Washer and dryer"
+        ]
+      },
+      {
+        "name": "Connectivity",
+        "items": [
+          "High-speed Wi-Fi",
+          "Dedicated workspace"
+        ]
+      },
+      {
+        "name": "Family & Practical",
+        "items": [
+          "Free private parking",
+          "Travel cot and high chair",
+          "Pool fence",
+          "First aid kit"
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "heading": "Gallery",
+    "images": [
+      {
+        "src": "assets/images/gallery-01.jpg",
+        "alt": "Private pool with sun loungers overlooking the olive grove",
+        "caption": "Private pool"
+      },
+      {
+        "src": "assets/images/gallery-02.jpg",
+        "alt": "Open-plan living room with exposed beams and fireplace",
+        "caption": "Living room"
+      },
+      {
+        "src": "assets/images/gallery-03.jpg",
+        "alt": "Rustic kitchen with farmhouse table and modern appliances",
+        "caption": "Kitchen"
+      },
+      {
+        "src": "assets/images/gallery-04.jpg",
+        "alt": "Master bedroom with king bed and shuttered windows",
+        "caption": "Master bedroom"
+      },
+      {
+        "src": "assets/images/gallery-05.jpg",
+        "alt": "Shaded terrace with dining table set for eight",
+        "caption": "Terrace"
+      },
+      {
+        "src": "assets/images/gallery-06.jpg",
+        "alt": "Mountain view at sunset from the garden",
+        "caption": "Sunset views"
+      }
+    ]
+  },
+  "rooms": {
+    "heading": "Sleeping Arrangements",
+    "items": [
+      {
+        "name": "Master Suite",
+        "beds": "1 King bed",
+        "features": [
+          "En-suite bathroom",
+          "Garden views"
+        ]
+      },
+      {
+        "name": "Olive Room",
+        "beds": "1 Queen bed",
+        "features": [
+          "En-suite bathroom",
+          "Private balcony"
+        ]
+      },
+      {
+        "name": "Garden Room",
+        "beds": "2 Single beds",
+        "features": [
+          "Shared bathroom",
+          "Garden access"
+        ]
+      },
+      {
+        "name": "Loft Room",
+        "beds": "2 Single beds",
+        "features": [
+          "Shared bathroom",
+          "Mountain views"
+        ]
+      }
+    ]
+  },
+  "location": {
+    "heading": "Location",
+    "description": "La Finca sits in peaceful countryside just 10 minutes from a traditional white village, with shops, restaurants, and a weekly market.",
+    "address": "Camino de los Olivos, s/n, Andalusia, Spain",
+    "mapEmbedUrl": "",
+    "nearby": [
+      {
+        "place": "Village centre",
+        "distance": "10 min drive"
+      },
+      {
+        "place": "Nearest beach",
+        "distance": "45 min drive"
+      },
+      {
+        "place": "Málaga Airport",
+        "distance": "1 hr drive"
+      },
+      {
+        "place": "Granada",
+        "distance": "1 hr 30 min drive"
+      }
+    ]
+  },
+  "rules": {
+    "heading": "House Rules",
+    "checkIn": "From 16:00",
+    "checkOut": "By 10:00",
+    "items": [
+      "No smoking indoors",
+      "No parties or events",
+      "Pets considered on request",
+      "Quiet hours from 23:00 to 08:00"
+    ],
+    "cancellationPolicy": "Full refund for cancellations made at least 30 days before arrival. 50% refund for cancellations made 14–30 days before arrival."
+  },
+  "testimonials": {
+    "heading": "Guest Reviews",
+    "items": [
+      {
+        "quote": "The most peaceful week we've ever had. The pool and the views are unbeatable.",
+        "author": "Sarah & Tom",
+        "origin": "United Kingdom",
+        "rating": 5
+      },
+      {
+        "quote": "Beautifully restored and spotlessly clean. The hosts thought of everything.",
+        "author": "Lukas",
+        "origin": "Germany",
+        "rating": 5
+      },
+      {
+        "quote": "Perfect base for exploring Andalusia with the whole family.",
+        "author": "The Martins",
+        "origin": "France",
+        "rating": 5
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Book Your Stay",
+    "intro": "Send us your dates and we'll get back to you within 24 hours.",
+    "hostName": "Your Host Name",
+    "email": "hello@example.com",
+    "phone": "+34 600 000 000",
+    "formAction": "",
+    "formFields": [
+      {
+        "name": "name",
+        "label": "Full Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email Address",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "checkIn",
+        "label": "Check-in Date",
+        "type": "date",
+        "required": true
+      },
+      {
+        "name": "checkOut",
+        "label": "Check-out Date",
+        "type": "date",
+        "required": true
+      },
+      {
+        "name": "guests",
+        "label": "Number of Guests",
+        "type": "number",
+        "required": true
+      },
+      {
+        "name": "message",
+        "label": "Message",
+        "type": "textarea",
+        "required": false
+      }
+    ],
+    "submitLabel": "Send Inquiry",
+    "successMessage": "Thank you! Your inquiry has been received. We'll be in touch within 24 hours."
+  },
+  "navigation": [
+    {
+      "label": "Overview",
+      "href": "#overview"
+    },
+    {
+      "label": "Gallery",
+      "href": "#gallery"
+    },
+    {
+      "label": "Amenities",
+      "href": "#amenities"
+    },
+    {
+      "label": "Rates",
+      "href": "#rates"
+    },
+    {
+      "label": "Availability",
+      "href": "#availability"
+    },
+    {
+      "label": "Location",
+      "href": "#location"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "footer": {
+    "copyright": "© 2026 La Finca. All rights reserved.",
+    "social": [
+      {
+        "platform": "Instagram",
+        "url": ""
+      },
+      {
+        "platform": "Facebook",
+        "url": ""
+      }
+    ]
+  }
+}
