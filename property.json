@@ -37,9 +37,9 @@
   "hero": {
     "propertyName": "La Finca",
     "tagline": "A restored countryside villa among the olive groves",
-    "location": "North Costa Blanca, Spain",
+    "location": "Costa Blanca, Spain",
     "backgroundImage": {
-      "src": "assets/images/hero.jpg",
+      "src": "assets/images/gallery-01.jpg",
       "alt": "Whitewashed villa with terracotta roof surrounded by olive trees at sunset"
     },
     "ctaPrimary": {
